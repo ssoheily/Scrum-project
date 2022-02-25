@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- <script src="script.js" async></script> -->
+    <!-- <script src="script.js" defer></script> -->
+    <title>Scrum</title>
+  </head>
+  <body>
+    <div class="boxModal">
+      <div class="modal">
+        <div class="header-modal"><h3>Are you remove item?</h3></div>
+        <div class="body-modal"><button class="btn_yes">yes</button><button class="btn_no">no</button></div>
+      </div>
+    </div>
+    <div class="container">
+      <header class="header">welcome to your website</header>
+      <main>
+        <div class="main">
+          <div class="main-input">
+            <div class="input">
+              <input type="text" />
+            </div>
+            <button class="btn_add">
+              <i class="fa fa-plus"></i>
+              Add ToDo
+            </button>
+          </div>
+          <div class="main-whiteBoard">
+            <div class="main-whiteBoard__child">
+              <div
+                class="main-whiteBoard__backlog"
+                draggable="true"
+                ondrop="dropHandler(event)"
+                ondragover="dragOverHandler(event)"
+              >
+                <h2>backlog</h2>
+                <!-- <div class="ele_add">dsffdsfsdfsfsddfsdff</div>
+                <div class="ele_add">dsffdsfsdfsfsddfsdff</div> -->
+              </div>
+              <div
+                class="main-whiteBoard__toDo"
+                draggable="true"
+                ondrop="dropHandler(event)"
+                ondragover="dragOverHandler(event)"
+              >
+                <h2>to Do</h2>
+              </div>
+              <div
+                class="main-whiteBoard__inProgress"
+                draggable="true"
+                ondrop="dropHandler(event)"
+                ondragover="dragOverHandler(event)"
+              >
+                <h2>in Progress</h2>
+              </div>
+              <div
+                class="main-whiteBoard__completeed"
+                draggable="true"
+                ondrop="dropHandler(event)"
+                ondragover="dragOverHandler(event)"
+              >
+                <h2>completeed</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
